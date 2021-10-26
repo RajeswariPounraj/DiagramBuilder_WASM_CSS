@@ -750,8 +750,8 @@ input, button, select, textarea {
 
 #toolbarEditor .e-toolbar-items .e-toolbar-item.tb-drawtools-dropdown-btn .e-dropdown-btn {
     /*width: 47px;
-    padding: 0px;
-    line-height: 28px;*/
+    padding: 0px;*/
+    line-height: 12px;
 }
 
 #toolbarEditor .e-toolbar-items .e-toolbar-item.tb-item-fill .e-dropdown-btn.e-btn {
@@ -814,9 +814,9 @@ input, button, select, textarea {
 }
 
 .e-toolbar .e-dropdown-btn .e-btn-icon:not(.e-caret) {
-    /*color: #757575;
+    color: #757575;
     font-size: 14px;
-    line-height: 0px;*/
+    line-height: 0px;
 }
 
 #orgChartAlignment .e-tbar-btn .e-icons.e-btn-icon,
@@ -915,7 +915,7 @@ input, button, select, textarea {
     #toolbarEditor .e-toolbar-items .e-toolbar-item.tb-item-order .e-dropdown-btn,
     #toolbarEditor .e-toolbar-items .e-toolbar-item.tb-item-undo .e-tbar-btn, #toolbarEditor .e-toolbar-items .e-toolbar-item.tb-item-redo .e-tbar-btn {
         background: #f5f5f5;
-        border-color: #DADADA;
+        /*border-color: #DADADA;*/
     }
 
         #toolbarEditor .e-toolbar-items .e-toolbar-item.tb-item-fill .e-btn .e-btn-icon,
@@ -1503,10 +1503,10 @@ input[type="color"]::-moz-color-swatch {
     background-color: rgb(229, 229, 229);
 }
 
-#moreShapesDialog .e-listview .e-text-content.e-checkbox .e-list-text {
+/*#moreShapesDialog .e-listview .e-text-content.e-checkbox .e-list-text {
     margin-top: 2px;
     font-size: 12px;
-}
+}*/
 
 #moreShapesDialog .temp-left-pane,
 #moreShapesDialog .temp-right-pane {
@@ -1514,11 +1514,11 @@ input[type="color"]::-moz-color-swatch {
     height: 380px;
 }
 
-#moreShapesDialog .e-checkbox-wrapper .e-frame, .e-css.e-checkbox-wrapper .e-frame {
+/*#moreShapesDialog .e-checkbox-wrapper .e-frame, .e-css.e-checkbox-wrapper .e-frame {
     height: 15px;
     width: 15px;
 }
-
+*/
 #moreShapesDialog .e-footer-content {
     border-top: 1px solid #D5D5D5;
 	padding: 12px;
@@ -1702,10 +1702,10 @@ input.db-layer-edit {
     padding-top: 5px;
 }
 
-.propertyTooltipDiv .e-checkbox-wrapper .e-frame {
+/*.propertyTooltipDiv .e-checkbox-wrapper .e-frame {
     width: 16px;
     height: 16px;
-}
+}*/
 
 .db-org-diagram .db-place-holder {
     display: none;
@@ -1990,7 +1990,7 @@ input.db-layer-edit {
 
 /* Radio Button - Customization Start */
 
-.e-radio + label::before {
+/*.e-radio + label::before {
     border: 1px solid;
     border-color: #D4D4D4;
 }
@@ -2027,7 +2027,7 @@ input.db-layer-edit {
 .e-radio:checked:focus + label::after {
     background-color: #046AE5;
     color: #046AE5;
-}
+}*/
 
 /* Radio Button - Customization End */
  
@@ -2366,29 +2366,29 @@ input:focus {
     outline: none;
 }
 
-.e-checkbox-wrapper .e-frame, .e-css.e-checkbox-wrapper .e-frame {
-    border: 1px solid #D4D4D4;
-}
+/*.e-checkbox-wrapper .e-frame, .e-css.e-checkbox-wrapper .e-frame {*/
+    /*border: 1px solid #D4D4D4;*/
+/*}*/
 
-#moreShapesDialog .e-listview .e-list-item.e-focused .e-checkbox-wrapper .e-frame.e-check, 
+/*#moreShapesDialog .e-listview .e-list-item.e-focused .e-checkbox-wrapper .e-frame.e-check, 
 #moreShapesDialog .e-listview .e-list-item.e-focused .e-css.e-checkbox-wrapper .e-frame.e-check {
-	background-color: #046AE5;
-    border-color: transparent;
-}
+	background-color: #046AE5;*/
+    /*border-color: transparent;*/
+/*}*/
 
-.e-checkbox-wrapper .e-frame.e-check, .e-css.e-checkbox-wrapper .e-frame.e-check,
+/*.e-checkbox-wrapper .e-frame.e-check, .e-css.e-checkbox-wrapper .e-frame.e-check,
 .e-checkbox-wrapper .e-checkbox:focus + .e-frame.e-check, .e-css.e-checkbox-wrapper .e-checkbox:focus + .e-frame.e-check,
 .e-checkbox-wrapper:hover .e-frame.e-check, .e-css.e-checkbox-wrapper:hover .e-frame.e-check {
-    background-color: #046AE5;
-    border-color: transparent;
-}
+    background-color: #046AE5;*/
+    /*border-color: transparent;*/
+/*}*/
 
 input.e-input::selection, textarea.e-input::selection, input.e-input.e-css::selection, 
 textarea.e-input.e-css::selection, .e-input-group input.e-input::selection, 
 .e-input-group.e-control-wrapper input.e-input::selection, 
 .e-float-input input::selection, .e-float-input.e-control-wrapper input::selection {
-    background: #046AE5;
-    color: white;
+    /*background: #046AE5;
+    color: white;*/
 }
 
 input.e-input::selection,
