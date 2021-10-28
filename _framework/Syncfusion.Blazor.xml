@@ -1698,11 +1698,6 @@
             Notify the component about the required scripts are rendered in the web page.
             </summary>
         </member>
-        <member name="M:Syncfusion.Blazor.SfBaseComponent.InvokeScriptRendered">
-            <summary>
-            Invoke method for ScriptDependencies class to notify script rendered in web page.
-            </summary>
-        </member>
         <member name="M:Syncfusion.Blazor.SfBaseComponent.InvokeMethod(System.String,System.Object[])">
             <summary>
             Invokes JSInterop for void return type methods.
@@ -1758,10 +1753,24 @@
             <param name="isCollectionChanged">Sets true if the observable collection changed.</param>
             <param name="e">Changed Event Args</param>
         </member>
-        <member name="T:Syncfusion.Blazor.ScriptDependencies">
+        <member name="T:Syncfusion.Blazor.SfComponentActivator">
             <summary>
-            ScriptDependencies class to load the dependent scripts in load time.
+            A implementation of <see cref="T:Microsoft.AspNetCore.Components.IComponentActivator"/> for Syncfusion Blazor components used to initialize custom components
+            that can be registered through dependency injection.
             </summary>
+        </member>
+        <member name="M:Syncfusion.Blazor.SfComponentActivator.#ctor(System.IServiceProvider)">
+            <summary>
+            Default constructor for SfComponentActivator class.
+            </summary>
+            <param name="provider">Service provider for registered components.</param>
+        </member>
+        <member name="M:Syncfusion.Blazor.SfComponentActivator.CreateInstance(System.Type)">
+            <summary>
+            Create component for the specified component type.
+            </summary>
+            <param name="componentType">Type of component need to be created.</param>
+            <returns>Returns newly created component.</returns>
         </member>
         <member name="T:Syncfusion.Blazor.SyncfusionBlazor">
             <summary>
@@ -2377,6 +2386,27 @@
             <summary>
             Specifies the callback to trigger when the selected chips changes.
             </summary>
+            <remarks>
+            You can get the updated SelectedChips value.
+            </remarks>
+            <example>
+            In the below code example, the SelectedChips value can be obtained from the <c>SelectedChipsChanged</c> event.
+            <code><![CDATA[
+            <SfChip Selection="SelectionType.Multiple" SelectedChipsChanged="SelectedChipsChanged">
+                <ChipItems>
+                    <ChipItem Text = "Small"></ChipItem>
+                    <ChipItem Text = "Medium"></ChipItem>
+                    <ChipItem Text = "Large"></ChipItem>
+                    <ChipItem Text = "Extra Large"></ChipItem>
+                </ChipItems>
+            </SfChip>
+            @code {
+                private void SelectedChipsChanged(string[] args) {
+                    string[] selectedChipItem = args;
+                }
+            }
+            ]]></code>
+            </example>
         </member>
         <member name="P:Syncfusion.Blazor.Buttons.SfChip.Selection">
             <summary>
@@ -31810,12 +31840,22 @@
             Specifies the input is focused state.
             </summary>
         </member>
+        <member name="P:Syncfusion.Blazor.Inputs.SfNumericTextBox`1.minMaxValue">
+            <summary>
+            Set the min and max validation value to the property.
+            </summary>
+        </member>
         <member name="M:Syncfusion.Blazor.Inputs.SfNumericTextBox`1.OnInitializedAsync">
             <summary>
             Triggers while initial rendering of the component.
             </summary>
             <returns>Task.</returns>
             <exclude/>
+        </member>
+        <member name="M:Syncfusion.Blazor.Inputs.SfNumericTextBox`1.SetCssClass">
+            <summary>
+            Set the css class to component container element.
+            </summary>
         </member>
         <member name="M:Syncfusion.Blazor.Inputs.SfNumericTextBox`1.OnParametersSetAsync">
             <summary>
